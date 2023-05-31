@@ -1,0 +1,292 @@
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background-color: #292B58;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    pointer-events: none;
+}
+
+.container{
+    max-width: 1210px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #fff;
+}
+
+.text{
+    ont-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.header{
+    background-image: url(../img/header-bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.img-1{
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    z-index: 5;
+}
+
+.img-2{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    z-index: 4;
+}
+
+.img-3{
+    position: absolute;
+    bottom: 120px;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    z-index: 3;
+}
+
+.img-4{
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    left: 50%;
+    margin-left: -199.5px;
+}
+
+.img-5{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header__top{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    gap: 100px;
+    list-style-type: none;
+}
+
+.nav__item{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.header__btn{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 7px 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header__content{
+    width: 780px;
+    margin: 160px auto 0;
+
+}
+
+.header__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.header__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.about{
+    padding: 30px 0 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.about__title{
+    margin-bottom: 30px;
+}
+
+.program__title{
+    margin-bottom: 40px;
+}
+
+.program__content{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.program__list{
+    list-style-type: none;
+    display: flex;
+    gap: 160px;
+}
+
+.program__list--1{
+    margin-left: 65px;
+}
+
+.program__list--2{
+    margin-left: auto;
+}
+
+.program__item{
+    max-width: 260px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.program__item::after{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    color: #AC4858;
+    font-family: 'Microsoft YaHei';
+    font-size: 30px;
+    font-weight: 400;
+    border: 2px solid #AC4858;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -65px;
+    top: -10px;
+}
+
+.program__item--1::after{
+    content: '1';
+}
+
+.program__item--2::after{
+    content: '2';
+}
+
+.program__item--3::after{
+    content: '3';
+}
+
+.program__item--4::after{
+    content: '6';
+}
+
+.program__item--5::after{
+ content: '5';
+}
+
+.program__item--6::after{
+    content: '4';
+}
+
+.program__arrow{
+    position: absolute;
+}
+
+.program__arrow--1{
+    right: -55px;
+    bottom: -5px;
+}
+
+.program__arrow--2{
+    right: -82px;
+    top: -15px;
+    transform: scale(1, -1)
+}
+
+.program__arrow--3{
+    right: -80px;
+    top: 30px;
+}
+
+.program__arrow--4{
+    transform: scale(-1, -1);
+    left: -155px;
+    top: -20px;
+}
+
+.program__arrow--5{
+    transform: scale(-1, 1);
+    left: -170px;
+    bottom: -10px;
+}
+
+.program__arrow--6{
+    left: -220px;
+    bottom: -114px;
+}
+
+.program__btn{
+    width: 201px;
+    height: 52px;
+    background: #AC4858;
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    border: none;
+    margin: 50px auto 0;
+}

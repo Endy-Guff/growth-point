@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Montserrat:wght@400;600;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -18,115 +18,355 @@
 
 <body>
 
-    <header class="header">
+    <div class="scroll-wrapper">
+        <div class="scroll-content">
 
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__top">
-                    <img class="logo" src="img/logo.svg" alt="">
-                    <ul class="nav">
-                        <li class="nav__item">О чем курс</li>
-                        <li class="nav__item">Тарифы</li>
-                        <li class="nav__item">FAQ</li>
-                        <li class="nav__item">Программа обучения</li>
-                        <li class="nav__item">Отзывы</li>
-                    </ul>
-                    <button class="header__btn">
-                        Хочу на курс
-                    </button>
+            <header class="header" data-speed="1.1">
+
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__top">
+                            <img class="logo" src="img/logo.svg" alt="">
+                            <ul class="nav">
+                                <li class="nav__item">О чем курс</li>
+                                <li class="nav__item">Тарифы</li>
+                                <li class="nav__item">FAQ</li>
+                                <li class="nav__item">Программа обучения</li>
+                                <li class="nav__item">Отзывы</li>
+                            </ul>
+                            <button class="header__btn">
+                                Хочу на курс
+                            </button>
+                        </div>
+                        <div class="header__content" data-speed=".8">
+                            <h1 class="header__title">
+                                ТОЧКА РОСТА
+                            </h1>
+                            <p class="header__text">
+                                Авторский курс по поиску точек роста бизнеса и внедрению изменений, которые кратно
+                                увеличат твои
+                                доходы.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="header__content">
-                    <h1 class="header__title">
-                        ТОЧКА РОСТА
-                    </h1>
-                    <p class="header__text">
-                        Авторский курс по поиску точек роста бизнеса и внедрению изменений, которые кратно увеличат твои
-                        доходы.
-                    </p>
+
+                <img class="img-1" src="img/mount-1.svg" alt="">
+                <img class="img-2" src="img/mount-2.svg" alt="">
+                <img class="img-3" src="img/mount-3.svg" alt="">
+                <img class="img-4" src="img/sun.svg" alt="">
+                <img class="img-5" src="img/stars.svg" alt="">
+
+            </header>
+
+            <main class="main">
+                <div class="container">
+                    <section class="about">
+                        <div class="about__left">
+                            <div class="about__title-box">
+                                <h2 class="about__title title">
+                                    О чем курс
+                                </h2>
+                            </div>
+                            <p class="about__text text">
+                                Бизнес - это живой организм. В нём взаимосвязаны все системы, которые работают на 100%
+                                только в здоровом теле. А если болит один орган, то это отражается на общем состоянии.
+                                В работе всё точно так же. Если что-то не получается в моменте, то это не значит, что
+                                всё плохо и это не твое. Это значит, что в каком-то сегменте есть проблема, и её нужно
+                                найти и исправить.
+
+                            </p>
+                        </div>
+                        <div class="about__right">
+                            <div class="about__title-box">
+                                <h2 class="about__title title">
+                                    Цель курса
+                                </h2>
+                            </div>
+                            <p class="about__text text">
+                                Вдохновить тебя на изменения в своем бизнесе или на запуск нового продукта.
+                                Мы хотим
+                                показать, что это не сложно - достаточно знать методологию действий и правильно
+                                использовать инструментарий. Мы научим, как по максимуму задействовать свои скрытые
+                                ресурсы, вдохновляться, находить точки роста и внедрять изменения за счет эффективных
+                                инструментов.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="program">
+                        <div class="program__title-box">
+                            <h2 class="program__title title">
+                                Программа обучения
+                            </h2>
+                        </div>
+                        <div class="program__content">
+                            <ul class="program__list program__list--1">
+                                <li class="program__item program__item--1">
+                                    Поиск идей и точка роста
+                                    <svg class="program__arrow program__arrow--1" width="68" height="14"
+                                        viewBox="0 0 66 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.48567 3.12586C1.0029 2.85763 0.394087 3.03155 0.125858 3.51433C-0.14237 3.9971 0.0315538 4.60591 0.514329 4.87414L1.48567 3.12586ZM65.9459 4.32456C66.1251 3.80218 65.8469 3.23339 65.3246 3.05414L56.8118 0.133052C56.2894 -0.0461998 55.7206 0.231965 55.5414 0.754351C55.3621 1.27674 55.6403 1.84553 56.1627 2.02478L63.7296 4.6213L61.1331 12.1882C60.9538 12.7106 61.232 13.2794 61.7543 13.4586C62.2767 13.6379 62.8455 13.3597 63.0248 12.8373L65.9459 4.32456ZM0.514329 4.87414C12.9742 11.7968 36.5598 19.0218 65.4393 4.89833L64.5607 3.10167C36.4105 16.8684 13.5275 9.81626 1.48567 3.12586L0.514329 4.87414Z"
+                                            stroke="white" stroke-width="1" />
+                                    </svg>
+                                </li>
+                                <li class="program__item program__item--2">
+                                    Точки контакта продукта с клиентом
+                                    <svg class="program__arrow program__arrow--2" width="68" height="14"
+                                        viewBox="0 0 66 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.48567 3.12586C1.0029 2.85763 0.394087 3.03155 0.125858 3.51433C-0.14237 3.9971 0.0315538 4.60591 0.514329 4.87414L1.48567 3.12586ZM65.9459 4.32456C66.1251 3.80218 65.8469 3.23339 65.3246 3.05414L56.8118 0.133052C56.2894 -0.0461998 55.7206 0.231965 55.5414 0.754351C55.3621 1.27674 55.6403 1.84553 56.1627 2.02478L63.7296 4.6213L61.1331 12.1882C60.9538 12.7106 61.232 13.2794 61.7543 13.4586C62.2767 13.6379 62.8455 13.3597 63.0248 12.8373L65.9459 4.32456ZM0.514329 4.87414C12.9742 11.7968 36.5598 19.0218 65.4393 4.89833L64.5607 3.10167C36.4105 16.8684 13.5275 9.81626 1.48567 3.12586L0.514329 4.87414Z"
+                                            stroke="white" stroke-width="1" />
+                                    </svg>
+                                </li>
+                                <li class="program__item program__item--3">
+                                    Бренд - платформа
+                                    <svg class="program__arrow program__arrow--3" width="18" height="89"
+                                        viewBox="0 0 18 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.66602 0.254062C3.25405 -0.113768 2.62189 -0.0779858 2.25406 0.333984C1.88623 0.745954 1.92201 1.37811 2.33398 1.74594L3.66602 0.254062ZM2.01224 88.156C2.09837 88.7015 2.61044 89.0739 3.15596 88.9878L12.0458 87.5841C12.5914 87.498 12.9638 86.9859 12.8776 86.4404C12.7915 85.8949 12.2794 85.5224 11.7339 85.6086L3.8318 86.8563L2.5841 78.9542C2.49796 78.4086 1.9859 78.0362 1.44037 78.1224C0.894848 78.2085 0.522438 78.7206 0.608574 79.2661L2.01224 88.156ZM2.33398 1.74594C5.67191 4.72623 8.74776 9.6409 11.1214 15.891C13.4894 22.1263 15.1329 29.6243 15.6521 37.7016C16.6908 53.8639 13.2235 72.2425 2.19126 87.4118L3.80874 88.5882C15.1765 72.9575 18.7092 54.0861 17.6479 37.5734C17.1171 29.3132 15.4356 21.6175 12.9911 15.1809C10.5522 8.7591 7.32808 3.52377 3.66602 0.254062L2.33398 1.74594Z"
+                                            stroke="white" stroke-width="1" />
+                                    </svg>
+
+                                </li>
+                            </ul>
+                            <ul class="program__list program__list--2">
+                                <li class="program__item program__item--4">
+                                    Процессы и масштабирование
+                                    <svg class="program__arrow program__arrow--6" width="561" height="166"
+                                        viewBox="0 0 561 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M144.92 2.61763C145.471 2.66166 145.953 2.25106 145.997 1.70053C146.041 1.15 145.63 0.668022 145.08 0.623996L144.92 2.61763ZM1 89.3173H-7.95126e-05L7.95126e-05 89.3299L1 89.3173ZM145 161.069L145.053 162.068L145.075 162.066L145.097 162.064L145 161.069ZM361 140L361.097 140.995L361.108 140.994L361 140ZM555.655 165.939C556.173 166.129 556.748 165.863 556.939 165.345L560.044 156.898C560.234 156.379 559.968 155.805 559.45 155.614C558.932 155.423 558.357 155.689 558.167 156.208L555.406 163.716L547.898 160.956C547.379 160.766 546.805 161.032 546.614 161.55C546.423 162.068 546.689 162.643 547.208 162.834L555.655 165.939ZM145.08 0.623996C120.982 -1.3031 84.8098 0.779234 54.6158 13.3427C39.5093 19.6284 25.8519 28.5575 15.9678 40.9678C6.07184 53.393 0 69.2566 0 89.3173H2C2 69.6932 7.92816 54.2725 17.5322 42.2138C27.1481 30.1404 40.4907 21.3862 55.3842 15.1892C85.1902 2.7872 121.018 0.706155 144.92 2.61763L145.08 0.623996ZM7.95126e-05 89.3299C0.171042 102.884 7.74488 122.617 29.6458 138.177C51.5454 153.736 87.7095 165.087 145.053 162.068L144.947 160.07C87.8905 163.075 52.2212 151.763 30.8042 136.547C9.38846 121.332 2.16229 102.178 1.99992 89.3047L7.95126e-05 89.3299ZM145.097 162.064L361.097 140.995L360.903 139.005L144.903 160.074L145.097 162.064ZM361.108 140.994C395.551 137.25 440.833 136.15 479.184 139.655C498.363 141.407 515.764 144.308 529.193 148.585C535.908 150.723 541.596 153.195 546.008 156.017C550.424 158.841 553.5 161.977 555.092 165.42L556.908 164.58C555.1 160.67 551.689 157.276 547.085 154.332C542.477 151.385 536.614 148.849 529.8 146.679C516.174 142.34 498.612 139.422 479.366 137.663C440.867 134.145 395.449 135.25 360.892 139.006L361.108 140.994Z"
+                                            stroke="white" stroke-width="1" />
+                                    </svg>
+
+                                </li>
+                                <li class="program__item program__item--5">
+                                    Команда и постановка целей
+                                    <svg class="program__arrow program__arrow--5" width="68" height="14"
+                                        viewBox="0 0 66 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.48567 3.12586C1.0029 2.85763 0.394087 3.03155 0.125858 3.51433C-0.14237 3.9971 0.0315538 4.60591 0.514329 4.87414L1.48567 3.12586ZM65.9459 4.32456C66.1251 3.80218 65.8469 3.23339 65.3246 3.05414L56.8118 0.133052C56.2894 -0.0461998 55.7206 0.231965 55.5414 0.754351C55.3621 1.27674 55.6403 1.84553 56.1627 2.02478L63.7296 4.6213L61.1331 12.1882C60.9538 12.7106 61.232 13.2794 61.7543 13.4586C62.2767 13.6379 62.8455 13.3597 63.0248 12.8373L65.9459 4.32456ZM0.514329 4.87414C12.9742 11.7968 36.5598 19.0218 65.4393 4.89833L64.5607 3.10167C36.4105 16.8684 13.5275 9.81626 1.48567 3.12586L0.514329 4.87414Z"
+                                            stroke="white" stroke-width="1" />
+                                    </svg>
+                                </li>
+                                <li class="program__item program__item--6">
+                                    Маркетинг
+                                    <svg class="program__arrow program__arrow--4" width="68" height="14"
+                                        viewBox="0 0 66 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.48567 3.12586C1.0029 2.85763 0.394087 3.03155 0.125858 3.51433C-0.14237 3.9971 0.0315538 4.60591 0.514329 4.87414L1.48567 3.12586ZM65.9459 4.32456C66.1251 3.80218 65.8469 3.23339 65.3246 3.05414L56.8118 0.133052C56.2894 -0.0461998 55.7206 0.231965 55.5414 0.754351C55.3621 1.27674 55.6403 1.84553 56.1627 2.02478L63.7296 4.6213L61.1331 12.1882C60.9538 12.7106 61.232 13.2794 61.7543 13.4586C62.2767 13.6379 62.8455 13.3597 63.0248 12.8373L65.9459 4.32456ZM0.514329 4.87414C12.9742 11.7968 36.5598 19.0218 65.4393 4.89833L64.5607 3.10167C36.4105 16.8684 13.5275 9.81626 1.48567 3.12586L0.514329 4.87414Z"
+                                            stroke="white" stroke-width="1" />
+                                    </svg>
+                                </li>
+                            </ul>
+                            <button class="program__btn">
+                                Хочу на курс
+                            </button>
+                        </div>
+                    </section>
+                    <section class="rate">
+                        <div class="rate__title-box">
+                            <h2 class="rate__title title">
+                                Тарифы
+                            </h2>
+                        </div>
+                        <div class="rate__items">
+                            <div class="rate__item">
+                                <h4 class="rate__item-title">
+                                    Один на один с
+                                    экспериментами
+                                </h4>
+                                <ul class="rate__list">
+                                    <li class="rate__list-item">
+                                        5 модулей обучения
+                                    </li>
+                                    <li class="rate__list-item">
+                                        4 месяцев доступ к материалам
+                                        курса
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Дополнительные материалы для самостоятельной работы: подкасты с
+                                        предпринимателями, гайды и фреймворки
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Доступ к бизнес - тиндеру
+                                    </li>
+                                    <li class="rate__list-item rate__list-item--opacity">
+                                        Чат с кураторами
+                                    </li>
+                                    <li class="rate__list-item rate__list-item--opacity">
+                                        Обратная связь от кураторов
+                                    </li>
+                                    <li class="rate__list-item rate__list-item--opacity">
+                                        Оффлайн - выпускной с
+                                        создателями курса и экспертами
+                                    </li>
+                                    <li class="rate__list-item rate__list-item--bold">
+                                        30 900 руб.
+                                    </li>
+                                </ul>
+                                <button class="rate__btn">
+                                    Выбрать тариф
+                                </button>
+                            </div>
+                            <div class="rate__item">
+                                <h4 class="rate__item-title">
+                                    Под присмотром старшего лаборанта
+                                </h4>
+                                <ul class="rate__list">
+                                    <li class="rate__list-item">
+                                        6 модулей обучения
+                                    </li>
+                                    <li class="rate__list-item">
+                                        12 месяцев доступ к материалам
+                                        курса
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Дополнительные материалы для самостоятельной работы: подкасты с
+                                        предпринимателями, гайды и фреймворки
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Доступ к бизнес - тиндеру
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Чат с кураторами
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Обратная связь от кураторов
+                                    </li>
+                                    <li class="rate__list-item rate__list-item--opacity">
+                                        Оффлайн - выпускной с
+                                        создателями курса и экспертами
+                                    </li>
+                                    <li class="rate__list-item rate__list-item--bold">
+                                        40 900 руб.
+                                    </li>
+                                </ul>
+                                <button class="rate__btn">
+                                    Выбрать тариф
+                                </button>
+                            </div>
+                            <div class="rate__item">
+                                <h4 class="rate__item-title">
+                                    В команде директрора лаборатории
+                                </h4>
+                                <ul class="rate__list">
+                                    <li class="rate__list-item">
+                                        6 модулей обучения
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Бессрочный доступ к материалам
+                                        курса
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Дополнительные материалы для самостоятельной работы: подкасты с
+                                        предпринимателями, гайды и фреймворки
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Доступ к бизнес - тиндеру
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Чат с кураторами
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Обратная связь от кураторов
+                                    </li>
+                                    <li class="rate__list-item">
+                                        Оффлайн - выпускной с
+                                        создателями курса и экспертами
+                                    </li>
+                                    <li class="rate__list-item rate__list-item--bold">
+                                        50 900 руб.
+                                    </li>
+                                </ul>
+                                <button class="rate__btn">
+                                    Выбрать тариф
+                                </button>
+                            </div>
+                        </div>
+                        </rate>
+                    </section>
+                    <section class="faq">
+                        <div class="faq__title-box">
+                        <h2 class="faq__title title">
+                            FAQ
+                        </h2>
+                        </div>
+                        <ul class="faq__list">
+                            <li class="faq__item">
+                                Когда проходило обучение первого потока?
+                            </li>
+                            <li class="faq__item">
+                                Когда стартует обучение второго потока?
+                            </li>
+                            <li class="faq__item">
+                                Сколько продлиться обучение на курсе?
+                            </li>
+                            <li class="faq__item">
+                                Как будет устроено обучение?
+                            </li>
+                            <li class="faq__item">
+                                Как можно оплатить курс?
+                            </li>
+                        </ul>
+                    </section>
                 </div>
-            </div>
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <img class="logo" src="img/logo.svg" alt="">
+                        <ul class="politic-list">
+                            <li class="politic-list__item">
+                                Политика конфиденциальности
+                            </li>
+                            <li class="politic-list__item">
+                                Договор оферты
+                            </li>
+                        </ul>
+                        <ul class="footer__nav">
+                            <li class="footer__nav-item">
+                                О чем курс
+                            </li>
+                            <li class="footer__nav-item">
+                                Отзывы
+                            </li>
+                            <li class="footer__nav-item">
+                                Тарифы
+                            </li>
+                        </ul>
+                        <ul class="footer__nav">
+                            <li class="footer__nav-item">
+                                FAQ
+                            </li>
+                            <li class="footer__nav-item">
+                                Программа обучения
+                            </li>
+                            <li class="footer__nav-item">
+                                Хочу на курс
+                            </li>
+                        </ul>
+                        <div class="footer-socials">
+                            <img src="img/inst.svg" alt="">
+                            <img src="img/tg.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
         </div>
-
-        <img class="img-1" src="img/mount-1.svg" alt="">
-        <img class="img-2" src="img/mount-2.svg" alt="">
-        <img class="img-3" src="img/mount-3.svg" alt="">
-        <img class="img-4" src="img/sun.svg" alt="">
-        <img class="img-5" src="img/stars.svg" alt="">
-
-    </header>
-
-    <main class="main">
-        <div class="container">
-            <section class="about">
-                <div class="about__left">
-                    <h2 class="about__title title">
-                        О чем курс
-                    </h2>
-                    <p class="about__text text">
-                        Бизнес - это живой организм. В нём взаимосвязаны все системы, которые работают на 100% только в здоровом теле. А если болит один орган, то это отражается на общем состоянии.
-                        В работе всё точно так же. Если что-то не получается в моменте, то это не значит, что всё плохо и это не твое. Это значит, что в каком-то сегменте есть проблема, и её нужно найти и исправить.
-                        
-                    </p>
-                </div>
-                <div class="about__right">
-                    <h2 class="about__title title">
-                        Цель курса
-                    </h2>
-                    <p class="about__text text">
-                        Вдохновить тебя на изменения в своем бизнесе или на запуск нового продукта.
-                        Мы хотим
-                        показать, что это не сложно - достаточно знать методологию действий и правильно использовать инструментарий. Мы научим, как по максимуму задействовать свои скрытые ресурсы, вдохновляться, находить точки роста и внедрять изменения за счет эффективных
-                        инструментов.
-                    </p>
-                </div>
-            </section>
-            <section class="program">
-                <h2 class="program__title title">
-                    Программа обучения
-                </h2>
-                <div class="program__content">
-                    <ul class="program__list program__list--1">
-                        <li class="program__item program__item--1">
-                            Поиск идей и точка роста
-                            <img class="program__arrow program__arrow--1" src="img/arrow-1.svg" alt="">
-                        </li>
-                        <li class="program__item program__item--2">
-                            Точки контакта продукта с клиентом
-                            <img class="program__arrow program__arrow--2" src="img/arrow-1.svg" alt="">
-                        </li>
-                        <li class="program__item program__item--3">
-                            Бренд - платформа
-                            <img class="program__arrow program__arrow--3" src="img/arrow-3.svg" alt="">
-                        </li>
-                    </ul>
-                    <ul class="program__list program__list--2">
-                        <li class="program__item program__item--4">
-                            Процессы и масштабирование
-                            <img class="program__arrow program__arrow--6" src="img/arrow-2.svg" alt="">
-                            
-                        </li>
-                        <li class="program__item program__item--5">
-                            Команда и постановка целей
-                            <img class="program__arrow program__arrow--5" src="img/arrow-1.svg" alt="">
-                        </li>
-                        <li class="program__item program__item--6">
-                            Маркетинг
-                            <img class="program__arrow program__arrow--4" src="img/arrow-1.svg" alt="">
-                        </li>
-                    </ul>
-                    <button class="program__btn">
-                        Хочу на курс
-                    </button>
-                </div>
-            </section>
-        </div>
-    </main>
-
-
+    </div>
 
     <script src="js/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap-drawsvg@1.0.0/drawsvgmin.min.js"></script>
     <script src="js/ScrollSmoother.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/WOW.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="js/main.js"></script>
 </body>
 

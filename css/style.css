@@ -135,7 +135,6 @@ img{
 .header__content{
     width: 780px;
     margin: 160px auto 0;
-
 }
 
 .header__title{
@@ -145,6 +144,15 @@ img{
     line-height: 52px;
     color: #FFFFFF;
     text-align: center;
+}
+
+.about__title-box,
+.program__title-box,
+.rate__title-box,
+.faq__title-box{
+    overflow: hidden;
+    height: 45px;
+    margin-bottom: 30px;
 }
 
 .header__text{
@@ -159,14 +167,6 @@ img{
     padding: 30px 0 50px;
     display: flex;
     gap: 20px;
-}
-
-.about__title{
-    margin-bottom: 30px;
-}
-
-.program__title{
-    margin-bottom: 40px;
 }
 
 .program__content{
@@ -248,6 +248,30 @@ img{
     bottom: -5px;
 }
 
+.program__arrow--1,
+.program__arrow--2,
+.program__arrow--4,
+.program__arrow--5{
+    stroke-dashoffset: -138px;
+    stroke-dasharray: 500px;
+}
+
+.program__arrow--1.show,
+.program__arrow--2.show,
+.program__arrow--4.show,
+.program__arrow--5.show{
+    animation: arrowAnim1 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.program__arrow--3.show{
+    animation: arrowAnim2 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.program__arrow--6.show{
+    animation: arrowAnim3 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
 .program__arrow--2{
     right: -82px;
     top: -15px;
@@ -257,6 +281,8 @@ img{
 .program__arrow--3{
     right: -80px;
     top: 30px;
+    stroke-dashoffset: -191px;
+    stroke-dasharray: 500px;
 }
 
 .program__arrow--4{
@@ -274,6 +300,8 @@ img{
 .program__arrow--6{
     left: -220px;
     bottom: -114px;
+    stroke-dashoffset: -440px;
+    stroke-dasharray: 500px;
 }
 
 .program__btn{
@@ -289,4 +317,205 @@ img{
     color: #fff;
     border: none;
     margin: 50px auto 0;
+}
+
+@keyframes arrowAnim1 {
+    0%{
+        fill: transparent;
+        stroke-dasharray: 500px;
+        stroke-dashoffset: -138px;
+    }
+    80%{
+        fill: transparent;
+        stroke-dasharray: 500px;
+        stroke-dashoffset: 0px;
+    }100%{
+        fill: white;
+        stroke-dasharray: 500px;
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes arrowAnim2 {
+    0%{
+        fill: transparent;
+        stroke-dasharray: 500px;
+        stroke-dashoffset: -191px;
+    }
+    80%{
+        fill: transparent;
+        stroke-dasharray: 500px;
+        stroke-dashoffset: 0px;
+    }100%{
+        fill: white;
+        stroke-dasharray: 500px;
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes arrowAnim3 {
+    0%{
+        fill: transparent;
+        stroke-dasharray: 500px;
+        stroke-dashoffset: -440px;
+    }
+    80%{
+        fill: transparent;
+        stroke-dasharray: 500px;
+        stroke-dashoffset: 0px;
+    }100%{
+        fill: white;
+        stroke-dasharray: 500px;
+        stroke-dashoffset: 0px;
+    }
+}
+
+.rate{
+    padding: 70px 0 0;
+}
+
+.rate__items{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.rate__item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.rate__item-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    max-width: 340px;
+}
+
+.rate__list{
+    list-style-type: none;
+    width: 360px;
+    height: 428px;
+    padding: 20px 20px 20px 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.rate__list-item{
+    position: relative;
+}
+
+.rate__list-item::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -20px;
+    top: 1px;
+    background-image: url(../img/mark.svg);
+}
+
+.rate__list-item--opacity::before{
+    background-image: url(../img/markDark.svg);
+}
+
+.rate__list-item--bold{
+    font-weight: 600;
+}
+
+.rate__list-item--bold::before{
+    background-image: none;
+}
+
+.rate__btn{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+
+    width: 224px;
+    height: 52px;
+    background: #AC4858;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.rate__list-item--opacity{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.faq{
+    padding-top: 70px;
+}
+
+.faq__list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    list-style-type: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.faq__item{
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid #FFFFFF;
+    position: relative;
+}
+
+.faq__item::after{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 9px;
+    background-image: url(../img/faqMark.svg);
+    right: 20px;
+    bottom: 8px;
+}
+
+.footer{
+    padding: 70px 0 50px
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.politic-list,
+.footer__nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.footer-socials{
+    display: flex;
+    gap: 20px;
 }
